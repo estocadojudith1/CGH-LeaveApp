@@ -32,6 +32,7 @@ const footerNavItems: NavItem[] = [
 
 <template>
     <Sidebar collapsible="icon" variant="inset">
+        <!-- Header -->
         <SidebarHeader>
             <SidebarMenu>
                 <SidebarMenuItem>
@@ -44,8 +45,32 @@ const footerNavItems: NavItem[] = [
             </SidebarMenu>
         </SidebarHeader>
 
+        <!-- Main navigation -->
         <SidebarContent>
             <NavMain :items="mainNavItems" />
+
+            <SidebarMenu class="mt-4">
+                <SidebarMenuItem>
+                    <SidebarMenuButton as-child>
+                        <button @click="route('/leaveform')" class="btn-sidebar">Leave Form</button>
+                    </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                    <SidebarMenuButton as-child>
+                        <button @click="route('/leavehistory')" class="btn-sidebar">Leave History</button>
+                    </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                    <SidebarMenuButton as-child>
+                        <button @click="route('/leaveupdate')" class="btn-sidebar">Leave Update</button>
+                    </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                    <SidebarMenuButton as-child>
+                        <button @click="route('/credit')" class="btn-sidebar">Credit</button>
+                    </SidebarMenuButton>
+                </SidebarMenuItem>
+            </SidebarMenu>
         </SidebarContent>
 
         <SidebarFooter>

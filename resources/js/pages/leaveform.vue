@@ -15,9 +15,9 @@ const breadcrumbs: BreadcrumbItem[] = [
    DEPARTMENT SELECTION
 ========================= */
 const department = ref('');
-defineProps<{
-    name?: string;
-}>();
+// const props = defineProps<{
+//     name?: string;
+// }>();
 
 /* =========================
    AUTO DATE PREPARED
